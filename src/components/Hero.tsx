@@ -92,15 +92,7 @@ export default function Hero() {
     <section id="hero" className="relative min-h-screen flex items-center pt-[70px] overflow-hidden">
       <canvas ref={canvasRef} className="absolute inset-0 z-[-1] pointer-events-none" />
 
-      {/* SVG Filter for Water Effect */}
-      <svg style={{ position: 'absolute', width: 0, height: 0 }}>
-        <filter id="blur-dissolve-effect">
-          <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise">
-            <animate attributeName="baseFrequency" values="0.02;0.05;0.02" dur="10s" repeatCount="indefinite" />
-          </feTurbulence>
-          <feDisplacementMap in="SourceGraphic" in2="noise" scale="15" />
-        </filter>
-      </svg>
+
 
       <div className="max-w-7xl mx-auto px-6 md:px-[60px] flex flex-col lg:flex-row gap-12 items-center w-full h-full">
         {/* Left Column */}
@@ -194,8 +186,8 @@ export default function Hero() {
                 style={{
                   clipPath: `circle(${isHovered ? '150%' : '0%'} at ${mousePos.x}% ${mousePos.y}%)`,
                   WebkitClipPath: `circle(${isHovered ? '150%' : '0%'} at ${mousePos.x}% ${mousePos.y}%)`,
-                  transition: 'clip-path 0.8s cubic-bezier(0.16, 1, 0.3, 1), -webkit-clip-path 0.8s cubic-bezier(0.16, 1, 0.3, 1)',
-                  filter: isHovered ? 'url(#blur-dissolve-effect)' : 'none'
+                  transition: 'clip-path 0.8s cubic-bezier(0.16, 1, 0.3, 1), -webkit-clip-path 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease',
+                  filter: isHovered ? 'blur(0px) brightness(1)' : 'blur(20px) brightness(1.5)'
                 }}
               >
                 <img
