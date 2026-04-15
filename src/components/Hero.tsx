@@ -94,7 +94,7 @@ export default function Hero() {
 
       {/* SVG Filter for Water Effect */}
       <svg style={{ position: 'absolute', width: 0, height: 0 }}>
-        <filter id="liquid-distortion-effect">
+        <filter id="blur-dissolve-effect">
           <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise">
             <animate attributeName="baseFrequency" values="0.02;0.05;0.02" dur="10s" repeatCount="indefinite" />
           </feTurbulence>
@@ -195,7 +195,7 @@ export default function Hero() {
                   clipPath: `circle(${isHovered ? '150%' : '0%'} at ${mousePos.x}% ${mousePos.y}%)`,
                   WebkitClipPath: `circle(${isHovered ? '150%' : '0%'} at ${mousePos.x}% ${mousePos.y}%)`,
                   transition: 'clip-path 0.8s cubic-bezier(0.16, 1, 0.3, 1), -webkit-clip-path 0.8s cubic-bezier(0.16, 1, 0.3, 1)',
-                  filter: isHovered ? 'url(#liquid-distortion-effect)' : 'none'
+                  filter: isHovered ? 'url(#blur-dissolve-effect)' : 'none'
                 }}
               >
                 <img
