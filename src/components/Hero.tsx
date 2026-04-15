@@ -128,13 +128,15 @@ export default function Hero() {
             >
               View My Work
             </motion.button>
-            <motion.button
+            <motion.a
+              href="/cv.png"
+              download="Anshu_Gupta_CV.png"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-7 py-3.5 border border-khaki text-khaki font-bold rounded-lg hover:bg-khaki hover:text-slate-green-deep transition-all uppercase tracking-wider text-[15px]"
+              className="inline-block px-7 py-3.5 border border-khaki text-khaki font-bold rounded-lg hover:bg-khaki hover:text-slate-green-deep transition-all uppercase tracking-wider text-[15px]"
             >
               Download CV
-            </motion.button>
+            </motion.a>
           </div>
 
           {/* Skills Strip */}
