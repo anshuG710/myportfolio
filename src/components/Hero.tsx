@@ -224,7 +224,7 @@ export default function Hero() {
           <span className="opacity-30">|</span>
           <a href="#" className="hover:text-khaki transition-colors">GitHub</a>
           <span className="opacity-30">|</span>
-          <a href="mailto:anshu@dev.np" className="hover:text-khaki transition-colors">anshu@dev.np</a>
+          <a href="https://anshugupta-eight.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-khaki transition-colors">anshugupta-eight.vercel.app</a>
         </div>
       </div>
     </section>
