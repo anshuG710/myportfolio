@@ -73,7 +73,7 @@ export const SKILLS = [
 
 export const CONTACT_INFO = [
   { icon: Mail, label: 'Email', value: 'imgupta.anshu@gmail.com', href: 'mailto:imgupta.anshu@gmail.com' },
-  { icon: Phone, label: 'Phone', value: '+977-9824850184', href: 'tel:+9779800000000' },
+  { icon: Phone, label: 'Phone', value: '+977-9824850184', href: 'tel:+9779824850184' },
   { icon: MapPin, label: 'Location', value: 'Kathmandu, Nepal', href: '#' },
 ];
 
