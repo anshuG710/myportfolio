@@ -62,7 +62,7 @@ export default function Projects() {
                     <Star size={20} fill="currentColor" />
                   </div>
                 )}
-                
+
                 <div className="flex items-center gap-3 mb-6">
                   <span className={cn(
                     "px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider",
@@ -75,7 +75,7 @@ export default function Projects() {
                 <h3 className="text-2xl font-bold text-khaki mb-4 group-hover:text-mint-light transition-colors">
                   {project.title}
                 </h3>
-                
+
                 <p className="text-mint text-sm leading-relaxed mb-8">
                   {project.description}
                 </p>
@@ -90,9 +90,9 @@ export default function Projects() {
 
                 <div className="flex items-center gap-4">
                   {project.github && (
-                    <a 
-                      href={project.github} 
-                      target="_blank" 
+                    <a
+                      href={project.github}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-lg bg-slate-green-deep text-mint hover:text-khaki hover:bg-slate-green-mid transition-all"
                       data-tooltip="View Source"
@@ -101,9 +101,9 @@ export default function Projects() {
                     </a>
                   )}
                   {project.live && (
-                    <a 
-                      href={project.live} 
-                      target="_blank" 
+                    <a
+                      href={project.live}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="p-2 rounded-lg bg-slate-green-deep text-mint hover:text-khaki hover:bg-slate-green-mid transition-all"
                       data-tooltip="Live Demo"
