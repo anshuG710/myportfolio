@@ -1,40 +1,13 @@
-import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Github, ExternalLink, Star } from 'lucide-react';
 import { cn } from '../lib/utils';
+import { PROJECTS } from '../constants/data';
 
-interface Project {
-  _id: string;
-  title: string;
-  description: string;
-  tags: string[];
-  status: 'Live' | 'In Development' | 'Archived';
-  github: string;
-  live: string;
-  featured: boolean;
-}
+type ProjectStatus = 'Live' | 'In Development' | 'Archived';
 
 export default function Projects() {
-  const [projects, setProjects] = useState<Project[]>([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        const res = await fetch('/api/projects');
-        const data = await res.json();
-        if (data.success) {
-          setProjects(data.data);
-        }
-      } catch (error) {
-        console.error('Error fetching projects:', error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchProjects();
-  }, []);
+  const loading = false;
+  const projects = PROJECTS;
 
   return (
     <section id="projects" className="py-24 bg-slate-green-deep relative">

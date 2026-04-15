@@ -76,3 +76,26 @@ export const CONTACT_INFO = [
   { icon: Phone, label: 'Phone', value: '+977-9824850184', href: 'tel:+9779800000000' },
   { icon: MapPin, label: 'Location', value: 'Kathmandu, Nepal', href: '#' },
 ];
+
+export const PROJECTS = [
+  {
+    _id: "local-0",
+    title: "BIM Quizer",
+    description: "An AI-powered quiz application built for TU (Tribhuvan University) BIM students. Features dynamic question generation, real-time scoring, and performance analytics.",
+    tags: ["AI", "React", "Node.js", "MongoDB"],
+    status: "In Development" as const,
+    github: "https://github.com/anshug710",
+    live: "",
+    featured: true,
+  },
+  {
+    _id: "local-1",
+    title: "Mandala Tea Shop",
+    description: "A beautiful, fully responsive website designed and built for a local tea shop in Kathmandu. Features menu showcase, ambiance gallery, and contact integration.",
+    tags: ["HTML", "CSS", "JavaScript", "UI/UX"],
+    status: "Live" as const,
+    github: "https://github.com/anshug710/mandala",
+    live: "https://anshug710.github.io/mandala/",
+    featured: true,
+  }
+];
