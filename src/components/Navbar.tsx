@@ -20,8 +20,8 @@ export default function Navbar() {
     <nav
       className={cn(
         "fixed top-0 left-0 w-full z-[100] transition-all duration-300 border-b h-[70px] flex items-center",
-        isScrolled 
-          ? "bg-slate-green-deep/85 backdrop-blur-md border-khaki/20 animate-glow-pulse" 
+        isScrolled || isMobileMenuOpen
+          ? "bg-slate-green-deep/85 backdrop-blur-md border-khaki/20 animate-glow-pulse"
           : "bg-transparent border-transparent"
       )}
     >
@@ -104,7 +104,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-slate-green-deep border-b border-khaki/20 overflow-hidden"
+            className="md:hidden absolute top-[70px] left-0 w-full bg-[#0A1A15] border-b border-khaki/20 overflow-hidden"
           >
             <div className="flex flex-col p-6 gap-4">
               {NAV_LINKS.map((link) => (
