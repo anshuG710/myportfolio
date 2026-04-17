@@ -26,7 +26,7 @@ export const NAV_LINKS = [
 export const SOCIAL_LINKS = [
   { name: 'GitHub', href: 'https://github.com/anshug710', icon: Github },
   { name: 'Instagram', href: 'https://instagram.com/', icon: Instagram },
-  { name: 'LinkedIn', href: 'https://linkedin.com/in/anshu-gupta', icon: Linkedin },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/anshu-gupta-701180302', icon: Linkedin },
 ];
 
 export const ROLES = [
